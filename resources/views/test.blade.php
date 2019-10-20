@@ -65,8 +65,8 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            <h2> Aston Books! </h2>
-            <p>Learing laracast</p>
+            <h2> Test Complete </h2>
+            <h1>{{$book}}</h1>
         </div>
     </body>
 </html>

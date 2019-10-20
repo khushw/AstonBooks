@@ -10,7 +10,14 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//view is html version of a code page.
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('test',function (){
+    return view('test', [
+        'book' => request('book')
+    ]); 
+    //return view('test');
 });
