@@ -1,72 +1,85 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout')
+    
+   
+    @section('content')
+		
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<header>
+						<h1>Welcome to Aston Books!</h1>
+					</header>
 
-        <title>Laravel</title>
+					<div class="flex ">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+						<div>
+							<span class="icon fa-car"></span>
+							<h3>Buy</h3>
+							<p>Buy Your Books here</p>
+						</div>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+						<div>
+							<span class="icon fa-camera"></span>
+							<h3>Sell</h3>
+							<p>Sell in less than a minute</p>
+						</div>
 
-            .full-height {
-                height: 100vh;
-            }
+						<div>
+							<span class="icon fa-bug"></span>
+							<h3>Register</h3>
+							<p>Click here for the register page</p>
+						</div>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+					</div>
 
-            .position-ref {
-                position: relative;
-            }
+					<footer>
+						<a href="#" class="button">Log In</a>
+					</footer>
+				</div>
+			</section>
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
 
-            .content {
-                text-align: center;
-            }
+		<!-- Three -->
+			<section id="three" class="wrapper align-center">
+				<div class="inner">
+					<div class="flex flex-2">
+						<article>
+							<div class="image round">
+								<img src="images/pic01.jpg" alt="Pic 01" />
+							</div>
+							<header>
+								<h3>Lorem ipsum<br /> dolor amet nullam</h3>
+							</header>
+							<p>Morbi in sem quis dui placerat ornare. Pellentesquenisi<br />euismod in, pharetra a, ultricies in diam sed arcu. Cras<br />consequat  egestas augue vulputate.</p>
+							<footer>
+								<a href="#" class="button">Learn More</a>
+							</footer>
+						</article>
+						<article>
+							<div class="image round">
+								<img src="images/pic02.jpg" alt="Pic 02" />
+							</div>
+							<header>
+								<h3>Sed feugiat<br /> tempus adipicsing</h3>
+							</header>
+							<p>Pellentesque fermentum dolor. Aliquam quam lectus<br />facilisis auctor, ultrices ut, elementum vulputate, nunc<br /> blandit ellenste egestagus commodo.</p>
+							<footer>
+								<a href="#" class="button">Learn More</a>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
 
-            .title {
-                font-size: 84px;
-            }
+		<!-- Footer -->
+			<!-- <footer id="footer">
+				
+			</footer> -->
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            <h2> Aston Books! </h2>
-            <p>Learing laracast</p>
-        </div>
-    </body>
-</html>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            
+    @endsection
