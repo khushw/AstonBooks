@@ -17,7 +17,11 @@ class CreatedBooksTable extends Migration
             $table->bigIncrements('id');
             $table->string('author');
             $table->string('name');
-            $table->unsignedDecimal('price');
+            $table->text('desription');
+            $table->double('price');
+            $table->boolean('disount');
+            $table->string('discount_price');
+            $table->string('thumbnail');
             $table->date('published_at');
             $table->timestamps();
         });
